@@ -1,0 +1,289 @@
+
+
+a{
+	color: black;
+	margin: 1em;
+}
+
+#ruta{
+	margin-left: 2em;
+}
+
+#boton{
+	margin: 1.5em;
+}
+#btn{
+font-weight: bold;
+}
+
+.textSectionDos{
+	padding-left: 5em;
+}
+.orange{
+	background-color: #F7B617;
+	height: auto;
+	width: auto;
+	margin-top: 20em;
+	margin-bottom:10em;
+	padding: 2em;
+	float: right;    
+}
+.seccionDos{
+background-color: #F7B617;
+padding: 5em;
+height: auto;
+}
+
+
+.linea{
+  padding: 2em;
+  border-style: solid; 
+  border-width: 0.1em; 
+  border-color: white;
+}
+
+#iphone{
+	height: auto;
+}
+
+.parrafo{
+	text-align: left;
+	font-size: 1.5em;
+	padding: 0.5em;
+}
+#text{
+	margin-bottom: 2em;
+}
+
+h1, h2{
+	color: white;
+	font-weight: bold;
+}
+
+#espan{
+	font-size: 2.5em;
+		color: white;
+	font-weight: bold;
+}
+
+
+p{
+	color: white
+}
+
+#logoForma{
+	margin-left: 1em;
+	height: 1.5em;
+}
+
+
+.yellow::-webkit-input-placeholder {  
+	color: white; 
+} 
+.yellow::-moz-placeholder {   
+	color: white; 
+} 
+.yellow:-ms-input-placeholder {    
+	color: white;
+} 
+.yellow:-moz-placeholder {    
+	color: white; 
+}
+
+#logoBlanco{
+	padding-top: 2em;
+	width: 5em;
+}
+
+input{
+	display: inline-block;
+}
+
+.fotoTaxi{
+	width: 100%;
+	height: auto;
+	background-image: url('../assets/images/taxi.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+	object-fit: cover;
+	background-position: 90% 90%;
+}
+
+
+
+.fotoConduce{
+	width: 100%;
+	height: auto;
+	background-image: url('../assets/images/conduce.jpg');
+	background-size:cover;
+	background-repeat: no-repeat;
+	object-fit: cover;	
+}
+
+.conduce{
+	padding-top: 30%;
+	padding-left: 5%;
+}
+.yellow{
+	background-color: #F7B617;	
+	color: white;
+}
+.place{
+	height: 3em;
+}
+
+.mapa{
+  border: 1px solid #fff;
+  height: 27em;
+  width: 35em;
+  margin-top: 7em;
+}
+#map{
+  width: 31em;
+  height: 25em;
+  margin: 1em;
+}
+
+
+#jiden{
+ display: none;
+}
+
+#transparent{
+	background-color: rgba(0,0,0,0.5);
+	height: 32em;
+}
+
+footer{
+	background-color: #2B2B2B;
+}
+iframe{
+	padding:1em;
+	border-radius: 2em solid white; 
+	height:35em;
+	width:80%;
+}
+#ruta{
+	font-weight: bolder;
+	margin-left:3.5em;
+}
+
+h3{
+	color: #FFF;
+}
+
+a{
+	color: #FFF;
+}
+#logos{
+	margin-top: 1em;
+	height: auto;
+	width: auto;
+}
+
+.icon-location2:before {
+  content: "\e904";
+
+}
+
+.icon-facebook:before {
+  content: "\e906";
+  color: #FFF;
+}
+
+.icon-twitter:before {
+  content: "\e907";
+  color: #FFF;
+}
+
+.icon-linkedin:before {
+  content: "\e902";
+  color: #FFF;
+}
+
+.icon-apple:before {
+  content: "\e905";
+  color: #FFF;
+}
+
+.icon-controller-play:before {
+  content: "\e900";
+  color: #FFF;
+}
+.icon-compass:before {
+  content: "\e903";
+  color: #FFF;
+}
+
+
+#iconoUno{
+	display: block;
+}
+
+.center {
+    margin-top:50px;   
+}
+
+.modal-header {
+	padding-bottom: 5px;
+}
+
+.modal-footer {
+    	padding: 0;
+	}
+    
+.modal-footer .btn-group button {
+	height:40px;
+	border-top-left-radius : 0;
+	border-top-right-radius : 0;
+	border: none;
+	border-right: 1px solid #ddd;
+}
+	
+.modal-footer .btn-group:last-child > button {
+	border-right: 0;
+}
+
+
+@media(max-width: 900px){
+  iframe{
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) { 
+#logos{
+    width: 20%;
+    height: 20%;
+
+
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px){
+	#iphone{
+		margin-top: 1em;
+	}
+}
+
+@media (max-width: 700px){
+	.laptop{
+		display: none;
+	}
+
+}
+

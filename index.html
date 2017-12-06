@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lab-car</title>
+</head>
+<body>
+
+
+
+
+<div class="container">
+  <section class="first-section">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <img id="logo" style="margin: 1.5em" src="assets/images/logoForma.png" alt=""></a>
+          <button id="boton" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"> <!-- este le da el menú hamburguesa -->
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+         </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#sumo">Viaja</a></li>
+            <li><a href="#features">Conduce</a></li>
+            <li> <a href="#" class="btn btn-link" role="link" data-toggle="modal" data-target="#login-modal">inicia sesión</a></p>
+             </li>
+        </div>
+        </div>
+    </nav>
+  </section>
+</div>
+
+<!-- END # BOOTSNIP INFO -->
+
+<!-- BEGIN # MODAL LOGIN -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" align="center">
+                    <img class="img-circle" id="img_logo" src="http://bootsnipp.com/img/logo.jpg">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                    </button>
+                </div>
+                
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+                
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+                        <div class="modal-body">
+                            <div id="div-login-msg">
+                               
+                            </div>
+                            <input id="login_username" class="form-control" type="text" placeholder="Username" required>
+                            <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                               
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-warning btn-md center-block">Login</button>
+                            </div>
+                            <div>
+                                <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+                           
+                        </div>
+                    </form>
+                    <!-- End # Login Form -->
+                    
+                    <!-- Begin | Lost Password Form -->
+                    <form id="lost-form" style="display:none;">
+                        <div class="modal-body">
+                            <div id="div-lost-msg">
+                                <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-lost-msg">Type your e-mail.</span>
+                            </div>
+                            <input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+                            </div>
+                            <div>
+                                <button id="lost_login_btn" type="button" class="btn btn-warning">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+
+                        </div>
+                    </form>
+                    <!-- End | Lost Password Form -->
+                    
+                    <!-- Begin | Register Form -->
+                    <form id="register-form" style="display:none;">
+                        <div class="modal-body">
+                            <div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Register an account.</span>
+                            </div>
+                            <input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+                            <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                        </div>
+                        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+
+                            </div>
+                        </div>
+                    </form>
+                    <!-- End | Register Form -->
+                    
+                </div>
+                <!-- End # DIV Form -->
+                
+            </div>
+        </div>
+
+    </div>
+      
+
+
+<section class="fotoTaxi">
+  <div class=" container-fluid">
+    <div class="row">
+      <div class="orange col-md-4 sm-hidden  ">
+     <div  class="texto-responsive">
+       <h1 class="hidden-xs hidden-sm">Disfruta del viaje <br> Eres dueño de tu tiempo</h1>
+       <h1 class="hidden-lg hidden-md">Comienza a viajar</h1>
+       <h1 class="hidden-lg hidden-md">Con</h1>
+        <p class="hidden-xs hidden-sm">Viaja con <span><img id="logoBlanco" src="assets/images/logoBlanco.png" alt=""></span></p>
+        </div>
+        <button id="btn" type="button" class="hidden-xs hidden-sm btn btn-default">REGISTRATE</button>
+    
+    <div class="row">
+       
+         <p class="hidden-xs hidden-sm text-center">o bien</p></div>
+       
+        <button id="btn" type="button" class="hidden-xs hidden-sm btn btn-default button2">Conviertete en un conductor</button>
+        <button id="btn" type="button" class="hidden-lg hidden-md btn btn-default button2">Descarga el app</button>
+      </div>
+        </div>
+        </div>
+  </section>
+
+<section class="seccionDos">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-11 col-md-pull-1">
+        <div class="row linea">
+          <div class="col-md-4 col-sm-8 col-xs-12">
+          <h2 class="hidden-lg hidden-md" >La nueva app</h2>
+          <img id="iphone" class="img-responsive" src="assets/images/iPhone6Plus.png" alt="">
+        </div>
+        <div class="col-md-6 textSectionDos texto-responsive">
+        <h2 class="hidden-xs hidden-sm" >Descarga la nueva app</h2>
+        <p class="hidden-xs hidden-sm parrafo">La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún mas fácil y rápido.</p>
+        <p class="hidden-xs hidden-sm parrafo">Con sólo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente donde ir.</p>
+        </div>
+
+        </div>
+        <h3 class="hidden-lg hidden-md" >Llega a tu destino aun mas rápido</h3>
+      </div>     
+    </div>
+  </div>  
+</section>
+
+<section class="fotoConduce">
+  <div class="container-fluid">
+    <div class="row">
+      <div class ="col-md-4 col-md-push-8" id="transparent">
+        <div class="conduce">
+          <h2>Conduce cuando quieras</h2>
+          <p>LabCar es una opcion flexible para alcanzar las metas tus metas financieras</p>
+          <button type="button" class="btn btn-warning">Conviértete en conductor</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="seccionDos">
+  <div class="container">
+    <div class="row">
+  
+      
+  
+      <div class=" col-md-3">
+        <h2>Tarifas</h2>
+        <p style="font-weight: bolder;">Consulta las tarifas LabCar aquí</p>
+       
+      <p><span id="iconoUno" class="icon-location2"></span></p>
+    
+        <form action="/action_page.php">
+       
+        <div class=" form-group">
+        
+        <input type="partida" class=" yellow form-control" id="place" placeholder="Ingrese su punto de partida" name="partida">
+    </div>
+    <div class="form-group">
+     <span class="icon-compass"></span>
+      <input type="destino" class="yellow form-control"" placeholder="Ingrese su destino" name="destino">
+    </div>
+
+    <button type="submit" id="ruta" class="ruta btn btn-lg btn-default">¡Trazar ruta!</button>
+  </form>
+    </div>
+
+     <div class="col-md-push-3 col-md-6">
+    <span><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d13315.205836968606!2d-70.6038218!3d-33.4544788!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1512512357587" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></span>
+  </div>
+    
+  </div>
+</section>
+  
+
+<footer class="page-footer center-on-small-only blue-grey lighten-5 pt-0">
+  <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <img id="logoBlanco" class="img-responsive" src="assets/images/logoBlanco.png" alt="Chania">  
+    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;"> 
+    
+    <footer>
+    <div class="container text-center">
+        <div class=" row">
+          <div class="lista col-md-4 ">
+                <p><a href="#!" >Viaja</a></p>
+                <p><a href="#!" >Conduce</a></p>
+                <p><a href="#!" >Ciudades</a></p>
+                <p><a href="#!" >Ciudades</a></p>
+                <p><a href="#!" >Entregas</a></p>
+                <p><a href="#!" >Cómo funciona?</a></p>
+                <p><a href="#!" >Países</a></p>
+                <p><a href="#!" >Seguridad</a></p>
+            </div>
+
+             <div class="hidden-xs hidden-sm col-md-4">
+                <p><a href="#!" >Oportunidades</a></p>
+                <p><a href="#!" >Nuestra </a></p>
+                <p><a href="#!" >Ciudades</a></p>
+                <p><a href="#!" >Ciudades</a></p>
+                <p><a href="#!" >Entregas</a></p>
+                <p><a href="#!" >Cómo funciona?</a></p>
+                <p><a href="#!" >Laboratoria</a></p>
+                <p><a href="#!" >Coders</a></p>
+            </div>
+
+
+            <div class="col-md-4">
+            <div class="row">
+              <img id="logos" class="img-responsive" src="assets/images/appstore.png" >
+              </div>
+              <div class="row">
+              <img id="logos" class="img-responsive" src="assets/images/enBadgeWebGeneric.png" >
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <span class="icon-facebook"></span>
+    <span class="icon-brand2"></span>
+    <span class="icon-linkedin"></span>
+    <span class="icon-apple"></span>
+    <span class="icon-controller-play"></span>
+    
+    <!--/.Footer Links-->
+    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 100%;">
+    
+    <div class="footer-copyright">
+        <div class="container-fluid">
+           <p> © 2017 Labcar technologies Inc.</p>
+        </div>
+    </div>
+    
+    
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
